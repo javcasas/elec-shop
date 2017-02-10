@@ -1,0 +1,37 @@
+languageCode = "en-us"
+title = "My New Hugo Site"
+baseurl = "http://example.org/"
+theme = "hugo-theme-bootstrap4"
+custom_navbar = true
+
+[[menu.main]]
+    name = "Catalogo"
+    url = "/catalogo/"
+    weight = -100
+
+[[menu.main]]
+    name = "Quienes Somos"
+    url = "/about_us/"
+    weight = -100
+
+[[menu.main]]
+    name = "Contactar"
+    url = "/contact/"
+    weight = -100
+
+[[menu.main]]
+    name = "Iluminacion"
+    url = "/catalogo/iluminacion/"
+    weight = -100
+    parent = "Catalogo"
+
+[[menu.main]]
+    name = "LED"
+    url = "/catalogo/iluminacion/led"
+    weight = -100
+    parent = "Iluminacion"
+
+#[[menu.main]]
+#    name = "Acerca De"
+#    url = "/about/"
+#    weight = 0
