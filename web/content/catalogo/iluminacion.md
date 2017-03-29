@@ -1,6 +1,6 @@
 +++
 date = "2017-01-08T20:25:29-05:00"
-title = "ilum _index"
+title = "Iluminación"
 draft = true
 type = "product_list"
 

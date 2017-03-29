@@ -44,22 +44,22 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Brand</a>
+            <a class="navbar-brand" href="{{ .Site.BaseURL }}">DSSTI Shop</a>
           </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-              {{ .Page.URL | absURL }}
+              {{ $theUrl := .URL }}
               {{ range .Site.Menus.main }}
-                <li>
+                <li {{ if eq .URL $theUrl }}class="active"{{ end }}>
                   {{ if .HasChildren }}
                     <a href="#" class='dropdown-toggle' data-toggle='dropdown'>{{ .Name }} <span class='caret'></span></a>
                     <ul class="dropdown-menu">
-                      <li><a href="{{.URL | absURL }}">{{ .Name }}</a></li>
+                      <li {{ if eq .URL $theUrl }}class="active"{{ end }}><a href="{{.URL | absURL }}">{{ .Name }}</a></li>
                       <li role="separator" class="divider"></li>
                       {{ range .Children }}
-                        <li>
+                        <li {{ if eq .URL $theUrl }}class="active"{{ end }}>
                           <a href="{{.URL | absURL }}">{{ .Name }}</a>
                         </li>
                       {{ end }}
@@ -69,20 +69,6 @@
                   {{ end }}
                 </li>
               {{ end }}
-              <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-              <li><a href="#">Link</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#">Separated link</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#">One more separated link</a></li>
-                </ul>
-              </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#">Link</a></li>
@@ -90,24 +76,6 @@
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
       </nav>
-    </div>
-
-
-    <div class="blog-masthead">
-      <div class="container">
-        <nav class="nav blog-nav">
-          <a class="nav-link {{ if .IsHome }}active{{ end }}" href="{{ .Site.BaseURL | absLangURL }}">{{ i18n "home" }}</a>
-          {{ if .Site.Params.custom_navbar }}
-          {{ range .Site.Menus.navbar }}
-          <a class="nav-link" href="{{.URL | absURL }}">{{ .Name }}</a>
-          {{ end }}
-          {{ else }}
-          {{ range where .Site.RegularPages "Type" "!=" "post" }}
-          <a class="nav-link" href="{{ .Permalink }}">{{ .Title }}</a>
-          {{ end }}
-          {{ end }}
-        </nav>
-      </div>
     </div>
 
     <header class="blog-header">
@@ -132,7 +100,7 @@
       </div> {{ "<!-- /.row -->" | safeHTML }}
     </div> {{ "<!-- /.container -->" | safeHTML }}
 
-    <footer class="blog-footer">
+    <footer class="container blog-footer">
       <p>
       {{ if .Site.Copyright }}
       {{ .Site.Copyright | markdownify }}

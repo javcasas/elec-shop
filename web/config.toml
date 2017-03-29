@@ -1,8 +1,18 @@
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "DSSTI Shop"
 baseurl = "http://example.org/"
-theme = "hugo-theme-bootstrap4"
+#theme = "hugo-theme-bootstrap4"
 custom_navbar = true
+copyright = "&copy;2017 DSSTI"
+
+[params.sidebar]
+    about = "DSSTI Shop es su mejor proveedor de iluminación y material eléctrico"
+    num_recent_posts = 5
+
+[[menu.sidebar]]
+    name = "Catalogo"
+    url = "/catalogo/"
+    weight = -100
 
 [[menu.main]]
     name = "Catalogo"
@@ -30,8 +40,3 @@ custom_navbar = true
     url = "/catalogo/iluminacion/led"
     weight = -100
     parent = "Iluminacion"
-
-#[[menu.main]]
-#    name = "Acerca De"
-#    url = "/about/"
-#    weight = 0
