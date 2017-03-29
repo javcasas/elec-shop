@@ -5,13 +5,6 @@
 {{ .Render "summary" }}
 {{ end }}
 
-{{ . }}
-------------
-{{ .Section }}
--------------
-{{ range .Data.Pages }}
-{{ . }}
-{{ end }}
 {{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
 <nav class="blog-pagination">
   {{ if and (.Paginator.HasPrev) (.Paginator.HasNext) }}
