@@ -1,7 +1,8 @@
 +++
 date = "2017-01-08T20:25:29-05:00"
-title = "Productos _index"
-draft = false
+title = "Catalogo"
+draft = true
+type = "product_list"
 
 +++
 

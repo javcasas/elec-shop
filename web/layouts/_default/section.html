@@ -1,5 +1,7 @@
 {{ define "main" }}
 
+{{ .Content }}
+
 {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
 {{ range $paginator.Pages }}
 {{ .Render "summary" }}

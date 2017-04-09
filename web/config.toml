@@ -5,6 +5,9 @@ baseurl = "http://example.org/"
 custom_navbar = true
 copyright = "&copy;2017 DSSTI"
 
+[params.sharingicons]
+    hide = "true"
+
 [params.sidebar]
     about = "DSSTI Shop es su mejor proveedor de iluminación y material eléctrico"
     num_recent_posts = 5
