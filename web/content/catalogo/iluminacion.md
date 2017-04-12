@@ -1,10 +1,11 @@
 +++
 date = "2017-01-08T20:25:29-05:00"
-title = "Iluminación"
+title = "Iluminación LED"
 draft = true
 type = "product_list"
 
 +++
+
 <div class="col-xs-2">
 AAAAAAAA AAAAAAAAA
 </div>

@@ -25,12 +25,12 @@ copyright = "&copy;2017 DSSTI"
 [[menu.main]]
     name = "Quienes Somos"
     url = "/about_us/"
-    weight = -100
+    weight = -90
 
 [[menu.main]]
     name = "Contactar"
     url = "/contact/"
-    weight = -100
+    weight = -80
 
 [[menu.main]]
     name = "Iluminacion"
