@@ -1,4 +1,5 @@
-languageCode = "en-us"
+languageCode = "es-es"
+defaultContentLanguage = "es-es"
 title = "DSSTI Shop"
 baseurl = "http://example.org/"
 #theme = "hugo-theme-bootstrap4"
