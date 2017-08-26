@@ -1,0 +1,6 @@
+baseurl = "http://vjeantet.github.io/hugo-menu-show/"
+languageCode = "en-us"
+title = "Hugo plays with menus"
+
+
+canonifyurls = true
