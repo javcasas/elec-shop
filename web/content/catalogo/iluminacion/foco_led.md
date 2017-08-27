@@ -2,6 +2,12 @@
 date = "2017-01-07T21:43:14-05:00"
 title = "foco_led"
 draft = true
+
+[menu.main]
+Name = "Focos LED"
+identifier = "led-bulb"
+parent = "led-lighting"
+
 +++
 
             

@@ -17,30 +17,3 @@ copyright = "&copy;2017 DSSTI"
     name = "Catalogo"
     url = "/catalogo/"
     weight = -100
-
-[[menu.main]]
-    name = "Catalogo"
-    url = "/catalogo/"
-    weight = -100
-
-[[menu.main]]
-    name = "Quienes Somos"
-    url = "/about_us/"
-    weight = -90
-
-[[menu.main]]
-    name = "Contactar"
-    url = "/contact/"
-    weight = -80
-
-[[menu.main]]
-    name = "Iluminacion"
-    url = "/catalogo/iluminacion/"
-    weight = -100
-    parent = "Catalogo"
-
-[[menu.main]]
-    name = "LED"
-    url = "/catalogo/iluminacion/led"
-    weight = -100
-    parent = "Iluminacion"

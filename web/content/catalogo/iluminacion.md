@@ -4,6 +4,11 @@ title = "Iluminación LED"
 draft = true
 type = "product_list"
 
+[menu.main]
+Name = "Iluminacion LED"
+identifier = "led-lighting"
+parent = "catalog"
+
 +++
 
 # ¿Que es?
