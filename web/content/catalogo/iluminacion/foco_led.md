@@ -1,6 +1,6 @@
 +++
 date = "2017-01-07T21:43:14-05:00"
-title = "foco_led"
+title = "Focos LED"
 draft = true
 
 [menu.main]
@@ -158,4 +158,4 @@ parent = "led-lighting"
 </table><p></p>
             </div>
         
-    </div>
+</div>

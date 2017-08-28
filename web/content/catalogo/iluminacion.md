@@ -7,7 +7,8 @@ type = "product_list"
 [menu.main]
 Name = "Iluminacion LED"
 identifier = "led-lighting"
-parent = "catalog"
+parent = ""
+weight = -200
 
 +++
 
