@@ -1,23 +1,28 @@
     <footer class="container blog-footer">
         <hr />
-        <form style="display: inline" class="form-inline">
-            <div class="form-group">
-                <h4>
-                    Obten Ofertas Exclusivas y Noticias
-                </h4>
+        <div class="row">
+            <form style="display: inline" class="form-inline col-lg-8">
+                <div class="form-group">
+                    <h4>
+                        Obten Ofertas Exclusivas y Noticias
+                    </h4>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Correo Electronico" />
+                </div>
+                <button type="submit" class="btn btn-primary">Suscribirse</button>
+            </form>
+            <div class="col-lg-4">
+                <a href="#">Facebook</a>
             </div>
-            <div class="form-group">
-                <input type="email" class="form-control" placeholder="Correo Electronico" />
-            </div>
-            <button type="submit" class="btn btn-primary">Suscribirse</button>
-        </form>
+        </div>
         <hr />
         <div class="row">
             <div class="col-md-3">
                 <strong>Atencion al cliente</strong>
                 <ul>
-                    <li><a href="#">Telefono</a></li>
-                    <li><a href="#">Email</a></li>
+                    <li><a href="{{ ref . "contact.md" }}"><span class="glyphicon glyphicon-earphone"></span> {{.Site.Params.contactMethods.telephone }}</a></li>
+                    <li><a href="{{ ref . "contact.md" }}"><span class="glyphicon glyphicon-envelope"></span> {{.Site.Params.contactMethods.email }}</a></li>
                     <li><a href="#">Devoluciones</a></li>
                 </ul>
             </div>

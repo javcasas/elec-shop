@@ -34,6 +34,7 @@
 
   <body>
     <div class="container">
+            <a href="{{ ref . "contact.md" }}"><span class="glyphicon glyphicon-earphone"></span> {{.Site.Params.contactMethods.telephone}}</a>
       <nav class="navbar navbar-default">
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
@@ -79,13 +80,6 @@
         </div><!-- /.container-fluid -->
       </nav>
     </div>
-
-    <header class="blog-header">
-      <div class="container">
-        <h1 class="blog-title"><a href="{{ .Site.BaseURL }}" rel="home">{{ .Site.Title | safeHTML }}</a></h1>
-        {{ if .Site.Params.description }}<p class="lead blog-description">{{ .Site.Params.description | markdownify }}</p>{{ end }}
-      </div>
-    </header>
 
     <div class="container">
       <div class="row">

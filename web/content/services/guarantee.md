@@ -1,15 +1,17 @@
 +++
 date = "2017-01-07T21:43:39-05:00"
-title = "Acerca de DSSTI"
+title = "Garantía"
 draft = true
 
 [menu.main]
-Name = "Quienes Somos"
-identifier = "about-us"
+Name = "Garantía"
+identifier = "garantia"
 parent = ""
 weight = -100
 
 +++
+
+# Garantía
 
 # DSSTI 
 DSSTI es una empresa fundada en 2015, centrada en ofrecer la mejor tecnología a todo Ecuador a precios razonables, sin problemas ni dificultades.
@@ -18,6 +20,3 @@ DSSTI es una empresa fundada en 2015, centrada en ofrecer la mejor tecnología a
 * Comunicación simple y sencilla.
 * Precios claros y transparentes.
 * Profesionalidad y puntualidad.
-
-
-* Dirección: Francisco de Orellana Oe3-143 y Vicente Rocafuerte, Tumbaco, Quito

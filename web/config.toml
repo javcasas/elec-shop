@@ -9,6 +9,11 @@ copyright = "&copy;2017 DSSTI"
 [params.sharingicons]
     hide = "true"
 
+[params.contactMethods]
+    email = "info@dssti.com"
+    telephone = "2378621"
+    facebook = ""
+
 [params.sidebar]
     about = "DSSTI Shop es su mejor proveedor de iluminación y material eléctrico"
     num_recent_posts = 5
