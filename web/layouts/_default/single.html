@@ -8,9 +8,21 @@
     <!--
     <p class="blog-post-meta"><time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format $dateFormat }}</time> by {{ .Params.author | default .Site.Params.author }}{{ if or (.Params.categories) (.Params.tags) }} in {{ partial "meta-terms.html" . }}{{ end }}</p>
     -->
+    {{ if .Params.price }}
+      <div>
+        <h1 class="pull-right">${{ .Params.price | lang.NumFmt 2 }}</h1>
+        Compre ahora!
+      </div>
+    {{ end }}
   </header>
   {{ .Content }}
 
+  {{ if .Params.price }}
+    <div>
+      <h2 class="text-center">Compre ahora!</h2>
+      <h1 class="text-center">${{ .Params.price | lang.NumFmt 2 }}</h1>
+    </div>
+  {{ end }}
   {{ if .IsTranslated }}
   <h4>{{ i18n "translations" }}</h4>
   <ul>

@@ -1,2 +1,2 @@
 #!/bin/sh
-~/.bin/hugo -D server
+../hugo_bin/hugo -D server

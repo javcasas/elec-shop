@@ -10,4 +10,11 @@ parent = ""
 weight = -100
 
 +++
-Acerca de DSSTI
+
+# DSSTI 
+DSSTI es una empresa fundada en 2015, centrada en ofrecer la mejor tecnología a todo Ecuador a precios razonables, sin problemas ni dificultades.
+
+# Valores
+* Comunicación simple y sencilla.
+* Precios claros y transparentes.
+* Profesionalidad y puntualidad.

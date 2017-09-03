@@ -1,0 +1,60 @@
+    <footer class="container blog-footer">
+        <hr />
+        <form style="display: inline" class="form-inline">
+            <div class="form-group">
+                <h4>
+                    Obten Ofertas Exclusivas y Noticias
+                </h4>
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="Correo Electronico" />
+            </div>
+            <button type="submit" class="btn btn-primary">Suscribirse</button>
+        </form>
+        <hr />
+        <div class="row">
+            <div class="col-md-3">
+                <strong>Atencion al cliente</strong>
+                <ul>
+                    <li><a href="#">Telefono</a></li>
+                    <li><a href="#">Email</a></li>
+                    <li><a href="#">Devoluciones</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <strong>Por que DSSTI</strong>
+                <ul>
+                    <li><a href="#">Garantias</a></li>
+                    <li><a href="#">Devoluciones</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <strong>Acerca de DSSTI</strong>
+                <ul>
+                    <li><a href="#">Lo que creemos</a></li>
+                    <li><a href="#">Calidad y valor</a></li>
+                    <li><a href="#">Nuestra historia</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <strong>Guias</strong>
+                <ul>
+                    <li><a href="#">Luz calida y luz fria</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <hr />
+        <p>
+          {{ if .Site.Copyright }}
+          {{ .Site.Copyright | markdownify }}
+          {{ else }}
+          Blog template created by <a href="https://twitter.com/mdo">@mdo</a>, ported to Hugo by <a href='https://twitter.com/mralanorth'>@mralanorth</a>.
+          {{ end }}
+          </p>
+      <p>
+      <a href="#">{{ i18n "backToTop" }}</a>
+      </p>
+        </div>
+    </footer>
+{{- /* vim: set ts=2 sw=2 et: */}}
