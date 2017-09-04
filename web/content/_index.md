@@ -6,14 +6,17 @@ draft = true
 
 <div class="row">
     <div class="col-lg-7">
-        Panel grande
+        <h2>Paneles LED</h2>
+        <img src="catalogo/iluminacion/panel_sobrepuesto/1.png" style="width: 100%">
     </div>
-    <div class="col-lg-5">
+    <div class="col-lg-5 text-center">
         <div>
-            Foco 1
+            <h2>Focos LED</h2>
+            <img src="catalogo/iluminacion/foco_led/1.png" style="max-width: 100%; max-height: 150px">
         </div>
         <div>
-            Foco 2
+            <h2>Focos LED</h2>
+            <img src="catalogo/iluminacion/foco_led/1.png" style="max-width: 100%; max-height: 150px">
         </div>
     </div>
 </div>

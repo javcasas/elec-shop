@@ -18,32 +18,32 @@
         </div>
         <hr />
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 text-center">
                 <strong>Atencion al cliente</strong>
-                <ul>
+                <ul class="list-unstyled">
                     <li><a href="{{ ref . "contact.md" }}"><span class="glyphicon glyphicon-earphone"></span> {{.Site.Params.contactMethods.telephone }}</a></li>
                     <li><a href="{{ ref . "contact.md" }}"><span class="glyphicon glyphicon-envelope"></span> {{.Site.Params.contactMethods.email }}</a></li>
                     <li><a href="#">Devoluciones</a></li>
                 </ul>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 text-center">
                 <strong>Por que DSSTI</strong>
-                <ul>
-                    <li><a href="#">Garantias</a></li>
-                    <li><a href="#">Devoluciones</a></li>
+                <ul class="list-unstyled">
+                    <li><a href="{{ ref . "services/guarantee.md" }}">Garantias</a></li>
+                    <li><a href="{{ ref . "services/returns.md" }}#">Devoluciones</a></li>
                 </ul>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 text-center">
                 <strong>Acerca de DSSTI</strong>
-                <ul>
+                <ul class="list-unstyled">
                     <li><a href="#">Lo que creemos</a></li>
                     <li><a href="#">Calidad y valor</a></li>
                     <li><a href="#">Nuestra historia</a></li>
                 </ul>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 text-center">
                 <strong>Guias</strong>
-                <ul>
+                <ul class="list-unstyled">
                     <li><a href="#">Luz calida y luz fria</a></li>
                 </ul>
             </div>
@@ -57,9 +57,6 @@
           Blog template created by <a href="https://twitter.com/mdo">@mdo</a>, ported to Hugo by <a href='https://twitter.com/mralanorth'>@mralanorth</a>.
           {{ end }}
           </p>
-      <p>
-      <a href="#">{{ i18n "backToTop" }}</a>
-      </p>
         </div>
     </footer>
 {{- /* vim: set ts=2 sw=2 et: */}}

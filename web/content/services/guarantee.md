@@ -6,7 +6,7 @@ draft = true
 [menu.main]
 Name = "Garantía"
 identifier = "garantia"
-parent = ""
+parent = "services"
 weight = -100
 
 +++
