@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Catalogos on DSSTI Shop</title>
+    <link>http://example.org/catalogo/</link>
+    <description>Recent content in Catalogos on DSSTI Shop</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <copyright>&amp;copy;2017 DSSTI</copyright>
+    <lastBuildDate>Sat, 07 Jan 2017 21:43:14 -0500</lastBuildDate>
+    
+	<atom:link href="http://example.org/catalogo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Focos LED</title>
+      <link>http://example.org/catalogo/iluminacion/foco_led/</link>
+      <pubDate>Sat, 07 Jan 2017 21:43:14 -0500</pubDate>
+      
+      <guid>http://example.org/catalogo/iluminacion/foco_led/</guid>
+      <description> Steve Francia    Características La nueva gama de bombillos ahorradores de energía ofrece la mejor tecnología LED con un rendimiento igual al de los bombillos tradicionales pero con un consumo de energía reducido hasta un 85%. El diseño compacto permite la instalación en sockets estándar facilitando así el reemplazo de productos antiguos.
+Aplicaciones  Hogares Centros comerciales Áreas públicas Oficinas Auditorios    Código Socket Watts (W) Lúmenes Temperatura de Color (K) Dimensiones (mm)     BG-EA120-005 E27 6 480 3000 50x100   BG-EA220-005 E27 6 480 4000 50x100   BG-EA320-005 E27 6 480 6500 50x100   BG-EA120-004 E27 10 810 3000 60x110   BG-EA220-004 E27 10 810 4000 60x110   BG-EA320-004 E27 10 810 6500 60x110   BG-EA120-003 E27 12 1100 3000 65x124   BG-EA220-003 E27 12 1100 4000 65x124   BG-EA320-003 E27 12 1100 6500 65x124      </description>
+    </item>
+    
+  </channel>
+</rss>
