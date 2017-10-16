@@ -3,12 +3,9 @@
     <b-row>
       <b-col>
         <div id="app">
-          <navigation />
-          <h1>Router starts here</h1>
-          <router-link to="/">Home</router-link>
+          <Navigation :greet="greet" />
           <router-view/>
-          <h1>Router ends here</h1>
-          <footera />
+          <Footer />
         </div>
       </b-col>
     </b-row>
@@ -16,13 +13,31 @@
 </template>
 
 <script>
-import navigation from '@/components/Navigation'
-import footera from '@/components/Footer'
+import Navigation from '@/components/Navigation'
+import Footer from '@/components/Footer'
 export default {
   name: 'app',
+  data: function () {
+    return {
+      name: 'Vue.js'
+    }
+  },
+  // define methods under the `methods` object
+  methods: {
+    greet: function (event) {
+      // `this` inside methods points to the Vue instance
+      alert('Hello ' + this.$data.name + '!')
+      console.log(this, this.$data, this.$data.name)
+      console.log(event)
+      // `event` is the native DOM event
+      if (event) {
+        alert(event.target.tagName)
+      }
+    }
+  },
   components: {
-    navigation,
-    footera
+    Navigation,
+    Footer
   }
 }
 </script>
