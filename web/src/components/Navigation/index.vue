@@ -15,8 +15,10 @@
       <b-nav is-nav-bar class="ml-auto">
 
         <b-nav-form>
-          <b-form-input size="sm" class="mr-sm-2" type="text" placeholder="Buscar"/>
-          <b-button size="sm" class="my-2 my-sm-0" type="submit">Buscar</b-button>
+          <b-form-input size="sm" class="mr-sm-2" type="text"
+            placeholder="Buscar" v-model="searchbox"/>
+          <b-button size="sm" class="my-2 my-sm-0" type="submit"
+            @click="onSearch" :disabled="invalidSearch">Buscar</b-button>
         </b-nav-form>
 
         <b-nav-item-dropdown right>
@@ -35,10 +37,21 @@
 <script>
 export default {
   name: 'Navigation',
-  props: ['greet'],
+  props: ['greet', 'onSearcha'],
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      searchbox: ''
+    }
+  },
+  computed: {
+    invalidSearch: function () {
+      return this.searchbox === ''
+    }
+  },
+  methods: {
+    onSearch: function (evt) {
+      console.log(this.searchbox)
+      this.searchbox = ''
     }
   }
 }
