@@ -44,8 +44,12 @@ footer {
     text-align: center;
     .footer {
         padding: 20px; 
+        h1 {
+          padding-top: 20px;
+        }
         ul {
           list-style-type: none;
+          padding: 0;
         }
     }
 }
