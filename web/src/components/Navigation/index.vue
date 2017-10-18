@@ -4,8 +4,7 @@
     <b-navbar-brand to="/">NavBar</b-navbar-brand>
     <b-collapse is-nav id="nav_collapse">
       <b-nav is-nav-bar>
-        <b-nav-item-dropdown text="Catálogo" right>
-          <b-dropdown-item to="/catalogo/">Catálogo</b-dropdown-item>
+        <b-nav-item-dropdown text="Iluminación" right>
           <b-dropdown-item to="/catalogo/iluminacion/">Iluminación</b-dropdown-item>
         </b-nav-item-dropdown>
         <button v-on:click="greet">but</button>
