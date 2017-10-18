@@ -17,17 +17,30 @@ export default new Router({
     {
       path: '/',
       name: 'Home',
-      component: Home
-    },
-    {
-      path: '/catalogo/',
-      name: 'catalogo',
-      component: Catalogo
-    },
-    {
-      path: '/catalogo/iluminacion/',
-      name: 'iluminacion',
-      component: Iluminacion
+      component: Home,
+      meta: {
+        breadcrumb: 'Entrada'
+      },
+      children: [
+        {
+          path: '/catalogo',
+          name: 'catalogo',
+          component: Catalogo,
+          meta: {
+            breadcrumb: 'Catálogo'
+          },
+          children: [
+            {
+              path: '/catalogo/iluminacion',
+              name: 'iluminacion',
+              component: Iluminacion,
+              meta: {
+                breadcrumb: 'Iluminacion'
+              }
+            }
+          ]
+        }
+      ]
     },
     {
       path: '/cart/',

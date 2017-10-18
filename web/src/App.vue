@@ -4,6 +4,9 @@
       <b-col>
         <div id="app">
           <Navigation :greet="greet" />
+          <h1>bl</h1>
+          <breadcrumbs />
+          <h1>bl</h1>
           <router-view/>
           <Footer />
         </div>

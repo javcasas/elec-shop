@@ -8,9 +8,12 @@ import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
+import VueBreadcrumbs from 'vue-breadcrumbs'
+
 Vue.config.productionTip = false
 
 Vue.use(BootstrapVue)
+Vue.use(VueBreadcrumbs)
 
 /* eslint-disable no-new */
 new Vue({
