@@ -13,7 +13,11 @@ import VueBreadcrumbs from 'vue-breadcrumbs'
 Vue.config.productionTip = false
 
 Vue.use(BootstrapVue)
-Vue.use(VueBreadcrumbs)
+Vue.use(VueBreadcrumbs, {
+  template: '<nav class="breadcrumb" v-if="$breadcrumbs.length"> ' +
+    '<router-link class="breadcrumb-item" v-for="(crumb, key) in $breadcrumbs" :to="linkProp(crumb)" :key="key">{{ crumb | crumbText }}</router-link> ' +
+    '</nav>'
+})
 
 /* eslint-disable no-new */
 new Vue({

@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <h2>Catalogo</h2>
+    <router-view />
   </div>
 </template>
 
