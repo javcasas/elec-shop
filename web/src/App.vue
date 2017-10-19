@@ -3,9 +3,11 @@
     <b-row>
       <b-col>
         <div id="app">
-          <Navigation :greet="greet" />
-          <breadcrumbs />
-          <router-view/>
+          <Navigation />
+          <div id="content">
+            <breadcrumbs />
+            <router-view />
+          </div>
           <Footer />
         </div>
       </b-col>
@@ -25,18 +27,7 @@ export default {
     }
   },
   // define methods under the `methods` object
-  methods: {
-    greet: function (event) {
-      // `this` inside methods points to the Vue instance
-      alert('Hello ' + this.$data.name + '!')
-      console.log(this, this.$data, this.$data.name)
-      console.log(event)
-      // `event` is the native DOM event
-      if (event) {
-        alert(event.target.tagName)
-      }
-    }
-  },
+  methods: {},
   components: {
     Navigation,
     Footer
@@ -52,5 +43,9 @@ export default {
   //text-align: center;
   //color: #2c3e50;
   //margin-top: 60px;
+}
+
+#content {
+  min-height: 500px;
 }
 </style>

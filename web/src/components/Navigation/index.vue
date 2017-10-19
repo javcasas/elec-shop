@@ -6,8 +6,8 @@
       <b-nav is-nav-bar>
         <b-nav-item-dropdown text="Iluminación" right>
           <b-dropdown-item to="/catalogo/iluminacion/">Iluminación</b-dropdown-item>
+          <b-dropdown-item to="/catalogo/iluminacion/foco_led">Focos LED</b-dropdown-item>
         </b-nav-item-dropdown>
-        <button v-on:click="greet">but</button>
       </b-nav>
 
       <!-- Right aligned nav items -->
@@ -36,7 +36,7 @@
 <script>
 export default {
   name: 'Navigation',
-  props: ['greet', 'onSearcha'],
+  props: ['onSearcha'],
   data () {
     return {
       searchbox: ''

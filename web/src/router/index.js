@@ -4,6 +4,8 @@ import Router from 'vue-router'
 import Home from '@/components/Home'
 import Catalogo from '@/components/Catalogo'
 import Iluminacion from '@/components/Catalogo/Iluminacion'
+import IluminacionHome from '@/components/Catalogo/Iluminacion/Home'
+import FocoLed from '@/components/Catalogo/Iluminacion/FocoLed'
 
 import Cart from '@/components/Cart'
 import Checkout from '@/components/Checkout'
@@ -13,6 +15,7 @@ import Test from '@/components/Test'
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
@@ -32,8 +35,26 @@ export default new Router({
           name: 'iluminacion',
           component: Iluminacion,
           meta: {
-            breadcrumb: 'Iluminacion'
-          }
+            breadcrumb: 'Iluminación'
+          },
+          children: [
+            {
+              path: '',
+              name: 'iluminacion_home',
+              component: IluminacionHome,
+              meta: {
+                breadcrumb: 'Listado'
+              }
+            },
+            {
+              path: 'foco_led',
+              name: 'foco_led',
+              component: FocoLed,
+              meta: {
+                breadcrumb: 'Focos LED'
+              }
+            }
+          ]
         }
       ]
     },
