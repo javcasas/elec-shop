@@ -6,6 +6,7 @@ import Catalogo from '@/components/Catalogo'
 import Iluminacion from '@/components/Catalogo/Iluminacion'
 import IluminacionHome from '@/components/Catalogo/Iluminacion/Home'
 import FocoLed from '@/components/Catalogo/Iluminacion/FocoLed'
+import PanelLed from '@/components/Catalogo/Iluminacion/PanelLed'
 
 import Cart from '@/components/Cart'
 import Checkout from '@/components/Checkout'
@@ -32,7 +33,7 @@ export default new Router({
       children: [
         {
           path: 'iluminacion',
-          name: 'iluminacion',
+          name: 'iluminacion_home',
           component: Iluminacion,
           meta: {
             breadcrumb: 'Iluminación'
@@ -52,6 +53,14 @@ export default new Router({
               component: FocoLed,
               meta: {
                 breadcrumb: 'Focos LED'
+              }
+            },
+            {
+              path: 'panel_led',
+              name: 'panel_led',
+              component: PanelLed,
+              meta: {
+                breadcrumb: 'Panel LED'
               }
             }
           ]
