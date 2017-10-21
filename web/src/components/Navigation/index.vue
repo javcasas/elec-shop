@@ -7,6 +7,7 @@
         <b-nav-item-dropdown text="Iluminación" right>
           <b-dropdown-item to="/catalogo/iluminacion/">Iluminación</b-dropdown-item>
           <b-dropdown-item to="/catalogo/iluminacion/foco_led">Focos LED</b-dropdown-item>
+          <b-dropdown-item to="/catalogo/iluminacion/panel_led">Panel LED</b-dropdown-item>
         </b-nav-item-dropdown>
       </b-nav>
 
