@@ -17,6 +17,10 @@ import ServicesHome from '@/components/Services/Home'
 import Returns from '@/components/Services/Devoluciones'
 import Guarantee from '@/components/Services/Garantia'
 
+import Guides from '@/components/Guias'
+import GuidesHome from '@/components/Guias/Home'
+import CalidColdGuide from '@/components/Guias/CalidColdGuide'
+
 import Test from '@/components/Test'
 
 Vue.use(Router)
@@ -121,6 +125,32 @@ export default new Router({
           component: Guarantee,
           meta: {
             breadcrumb: 'Garantia'
+          }
+        }
+      ]
+    },
+    {
+      path: '/guides/',
+      name: 'Guides_home',
+      component: Guides,
+      meta: {
+        breadcrumb: 'Guias'
+      },
+      children: [
+        {
+          path: '',
+          name: 'Guides_home',
+          component: GuidesHome,
+          meta: {
+            breadcrumb: ''
+          }
+        },
+        {
+          path: 'guarantee',
+          name: 'Guarantee',
+          component: CalidColdGuide,
+          meta: {
+            breadcrumb: 'Luz Calida y Luz Fria'
           }
         }
       ]

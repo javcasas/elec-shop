@@ -3,21 +3,24 @@
     <b-container class="footer">
       <b-row>
         <b-col>
-          <h1>Column 1</h1>
+          <h1>Atencion al Cliente</h1>
           <ul>
-            <li>Item</li>
+            <li><router-link to="/services/guarantee/">Garantia</router-link></li>
+            <li><router-link to="/services/returns/">Devoluciones</router-link></li>
           </ul>
         </b-col>
         <b-col>
-          <h1>Column 2</h1>
+          <h1>Acerca de DSSTI</h1>
           <ul>
-            <li>Item</li>
+            <li>Lo que creemos</li>
+            <li>Calidad y valor</li>
+            <li>Nuestra historia</li>
           </ul>
         </b-col>
         <b-col>
-          <h1>Column 3</h1>
+          <h1>Guias</h1>
           <ul>
-            <li>Item</li>
+            <li>Luz calida y luz fria</li>
           </ul>
         </b-col>
       </b-row>
