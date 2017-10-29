@@ -21,6 +21,11 @@
             @click="onSearch" :disabled="invalidSearch">Buscar</b-button>
         </b-nav-form>
 
+        <b-nav-item-dropdown text="Servicio al Cliente">
+          <b-dropdown-item to="/services/guarantee/">Garantia</b-dropdown-item>
+          <b-dropdown-item to="/services/returns/">Devoluciones</b-dropdown-item>
+        </b-nav-item-dropdown>
+
         <b-nav-item-dropdown right>
           <!-- Using button-content slot -->
           <template slot="button-content">

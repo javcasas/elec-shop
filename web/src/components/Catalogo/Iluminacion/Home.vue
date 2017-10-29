@@ -1,6 +1,11 @@
 <template>
-  <div class="hello">
-    HOME VIEW
+  <div>
+    <div v-for="item in items">
+      <a :href="item.url">
+        <img :src="item.image" />
+        {{ item.description }}
+      </a>
+    </div>
   </div>
 </template>
 
@@ -9,6 +14,26 @@ export default {
   name: 'Iluminacion',
   data () {
     return {
+      items: [
+        {
+          url: '',
+          image: '',
+          description: 'Foco LED',
+          price: ''
+        },
+        {
+          url: '',
+          image: '',
+          description: 'Panel LED',
+          price: ''
+        },
+        {
+          url: '',
+          image: '',
+          description: 'Tubo LED',
+          price: ''
+        }
+      ]
     }
   }
 }
@@ -16,21 +41,4 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
 </style>
