@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h2>Servicios</h2>
+    <h2>Atencion al cliente</h2>
     <router-view />
   </div>
 </template>

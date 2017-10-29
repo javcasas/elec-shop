@@ -95,13 +95,16 @@ export default new Router({
       path: '/services/',
       name: 'Servicios_home',
       component: Services,
+      meta: {
+        breadcrumb: 'Servicio al cliente'
+      },
       children: [
         {
           path: '',
           name: 'Servicios_home',
           component: ServicesHome,
           meta: {
-            breadcrumb: 'Servicio al cliente'
+            breadcrumb: ''
           }
         },
         {

@@ -1,6 +1,13 @@
 <template>
   <div class="hello">
-    <h2>Servicios</h2>
+    <ul>
+        <li>
+            <router-link to="/services/guarantee/">Garantia</router-link>
+        </li>
+        <li>
+            <router-link to="/services/returns/">Devoluciones</router-link>
+        </li>
+    </ul>
   </div>
 </template>
 
@@ -15,10 +22,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
-}
-
 ul {
   list-style-type: none;
   padding: 0;
