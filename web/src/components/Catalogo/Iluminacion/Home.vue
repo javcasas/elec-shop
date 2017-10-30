@@ -10,30 +10,12 @@
 </template>
 
 <script>
+import { lightingProducts } from '@/models/AllProducts'
 export default {
   name: 'Iluminacion',
   data () {
     return {
-      items: [
-        {
-          url: '',
-          image: '',
-          description: 'Foco LED',
-          price: ''
-        },
-        {
-          url: '',
-          image: '',
-          description: 'Panel LED',
-          price: ''
-        },
-        {
-          url: '',
-          image: '',
-          description: 'Tubo LED',
-          price: ''
-        }
-      ]
+      items: lightingProducts
     }
   }
 }
