@@ -8,6 +8,7 @@ import Iluminacion from '@/components/Catalogo/Iluminacion'
 import IluminacionHome from '@/components/Catalogo/Iluminacion/Home'
 import FocoLed from '@/components/Catalogo/Iluminacion/FocoLed'
 import PanelLed from '@/components/Catalogo/Iluminacion/PanelLed'
+import GenericProduct from '@/components/Catalogo/GenericProduct'
 
 import Cart from '@/components/Cart'
 import Checkout from '@/components/Checkout'
@@ -22,6 +23,8 @@ import GuidesHome from '@/components/Guias/Home'
 import CalidColdGuide from '@/components/Guias/CalidColdGuide'
 
 import Test from '@/components/Test'
+
+console.log(FocoLed)
 
 Vue.use(Router)
 
@@ -71,6 +74,17 @@ export default new Router({
               component: FocoLed,
               meta: {
                 breadcrumb: 'Focos LED'
+              }
+            },
+            {
+              path: 'generic_product',
+              name: 'generic_product',
+              component: GenericProduct,
+              props: {
+                product: 'asdf'
+              },
+              meta: {
+                breadcrumb: 'Generic Product'
               }
             },
             {

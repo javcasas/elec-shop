@@ -3,6 +3,7 @@
     <div v-for="item in items">
       <a :href="item.url">
         <img :src="item.image" />
+        {{ item.name }}
         {{ item.description }}
       </a>
     </div>
